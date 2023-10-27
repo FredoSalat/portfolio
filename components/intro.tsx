@@ -50,10 +50,8 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        Hi, I&apos;m Fredrik! Currently working as a junior web developer at
-        Canvas Consulting. I am driven by building robust and fast applications
-        through maintainable and efficient code. I have a solid and broad
-        background as, among other things, a{" "}
+        Hi, I&apos;m Fredrik! I work as a web developer at Canvas Consulting. I
+        have a solid and broad background as, among other things, a{" "}
         <a
           className="underline font-bold"
           href="https://www.aimedtech.com/"
@@ -96,7 +94,7 @@ export default function Intro() {
         </a>
 
         <a
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack"
+          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.30rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack"
           href="https://github.com/FredoSalat"
           target="_blank"
         >
