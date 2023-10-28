@@ -67,20 +67,21 @@ export const projectsData = [
       "Building a full stack customer-facing web application for a company in the solar energy industry.",
     tags: ["React", "Next.js", "Tailwind"],
     imageUrl: solenergi1,
+    url: "https://solenergiteamet.se/",
   },
   {
-    title: "rmtDev",
-    description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
+    title: "Personal training",
+    description: "Building a landing page for ",
     tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
     imageUrl: solenergi2,
+    url: "https://solenergiteamet.se/",
   },
   {
-    title: "Word Analytics",
-    description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+    title: "E-commerce",
+    description: "Built a dashboard and e-commerce platform",
+    tags: ["React", "Next.js", "Prisma", "Tailwind"],
     imageUrl: solenergi3,
+    url: "https://solenergiteamet.se/",
   },
 ] as const;
 
