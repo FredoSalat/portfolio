@@ -35,28 +35,51 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Fullstack Developer Bootcamp - Integrify",
+    location: "Remote",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "Covered topics: HTML | CSS | JavaScript | Web Accessibility | TypeScript | React | Redux Toolkit | Material UI | NodeJS | ExpressJS | MongoDB | REST | Cloud - AWS | DevOps.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "2023",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Master of Science - MS, Computer Science",
+    location: "Stockholm University",
+    description: "",
+    icon: React.createElement(LuGraduationCap),
+    date: "2019 - 2022",
+  },
+  {
+    title: "Co-Founder, COO - AI Medical Technology",
+    location: "Stockholm",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "AI Medical Technology is an image analysis company that develops AI solutions and applications for healthcare. Worked strategically and executed tasks within R&D, regulatory compliance, clinical research, and business administration to bring the first product to market.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "2020-2021",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "User Researcher - Spotify",
+    location: "Stockholm",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+      "Spent the summer in Spotify search with an interdisciplinary team of data scientists, machine learning engineers, and data engineers, trying to understand how 300 million active users could be served a better experience finding and discovering new releases of the artists they love.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2020",
+  },
+
+  {
+    title: "User Researcher - YEAY",
+    location: "Berlin",
+    description:
+      "As a part of the product team I was responsible for the end-to-end user research process involving weekly user tests, interviews, surveys and field studies. Adopting my work to a fast moving start-up culture enabled users to be let into discussions and decision making through clear and actionable insights.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2018",
+  },
+  {
+    title: "Bachelor's degree, Computer Science",
+    location: "Stockholm University",
+    description: "",
+    icon: React.createElement(LuGraduationCap),
+    date: "2014-2018",
   },
 ] as const;
 
@@ -98,11 +121,7 @@ export const skillsData = [
   "Prisma",
   "MongoDB",
   "Redux",
-  "GraphQL",
-  "Apollo",
   "Express",
-  "PostgreSQL",
   "Python",
-  "Django",
   "Framer Motion",
 ] as const;
