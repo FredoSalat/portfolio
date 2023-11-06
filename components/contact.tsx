@@ -1,14 +1,19 @@
 "use client";
 
-import React from "react";
-import { FaPaperPlane } from "react-icons/fa";
+import React, { useRef } from "react";
 import { motion } from "framer-motion";
 
 import SectionHeading from "@/components/section-heading";
 import { useSectionInView } from "@/lib/hooks";
+import { sendEmail } from "@/actions/sendEmail";
+import SubmitBtn from "./submit-btn";
+
+import toast from "react-hot-toast";
 
 export default function Contact() {
   const { ref } = useSectionInView("Contact", 0.7);
+  const reference = useRef<HTMLFormElement>(null);
+
   return (
     <motion.section
       ref={ref}
@@ -36,31 +41,40 @@ export default function Contact() {
         or through this form.
       </p>
       <form
+        ref={reference}
         className="mt-10 flex flex-col"
         action={async (formData) => {
-          console.log(formData);
+          const { data, error } = await sendEmail(formData);
+
+          if (error) {
+            toast.error(error, {
+              duration: 5000,
+            });
+            return;
+          }
+          toast.success("Email was successfully sent!", {
+            duration: 5000,
+          });
+          reference.current?.reset();
         }}
       >
         <input
           className="h-14 rounded-lg borderBlack p-4"
+          name="senderEmail"
           type="email"
           required
           maxLength={500}
           placeholder="Your email"
         />
         <textarea
+          id="formTextArea"
           className="h-52 my-3 rounded-lg borderBlack p-4"
+          name="message"
           placeholder="Your message"
           required
-          maxLength={500}
+          maxLength={5000}
         />
-        <button
-          className="group flex justify-center items-center gap-2 h-[3rem] w-[8rem] bg-gray-900 text-white rounded-full outline-none transition-all focus:scale-110 hover:scale-110 active:scale-105 hover:bg-gray-950"
-          type="submit"
-        >
-          Submit{" "}
-          <FaPaperPlane className="text-xs opacity-70 transition-all group-hover:translate-x-1 group-hover:-translate-y-1" />
-        </button>
+        <SubmitBtn />
       </form>
     </motion.section>
   );
