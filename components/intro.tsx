@@ -18,7 +18,7 @@ export default function Intro() {
     <section
       ref={ref}
       id="home"
-      className="mb-28 max-w-[70rem] text-center sm:mb-0 scroll-mt-[100rem]"
+      className="mb-10 max-w-[70rem] text-center sm:mb-0 scroll-mt-[100rem]"
     >
       <motion.p
         className="mb-10 mt-4 px-4 text-4xl font-medium !leading-[1.5] sm:text-6xl sm:!leading-[1.4]"
