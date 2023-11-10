@@ -100,6 +100,14 @@ export const projectsData = [
     url: "https://solenergiteamet.se/",
   },
   {
+    title: "What to eat?",
+    description:
+      "Building a full stack application matching the ingredients in your fridge with recipes tailored to your taste",
+    tags: ["React", "Next.js", "Prisma", "Tailwind"],
+    imageUrl: solenergi3,
+    url: "https://solenergiteamet.se/",
+  },
+  {
     title: "E-commerce",
     description: "Built a dashboard and e-commerce platform",
     tags: ["React", "Next.js", "Prisma", "Tailwind"],

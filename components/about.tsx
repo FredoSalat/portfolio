@@ -13,7 +13,7 @@ export default function About() {
   return (
     <motion.section
       ref={ref}
-      className="flex flex-col sm:flex-row mb-28 sm:max-w-[60rem] max-w-[30rem] text-center leading-8 sm:mb-40 sm:mt-40 scroll-mt-28"
+      className="flex flex-col bg-gray-100 rounded-lg sm:flex-row mb-28 sm:max-w-[60rem] max-w-[30rem] text-center leading-8 sm:mb-40 sm:mt-40 scroll-mt-28 shadow-md p-5 dark:bg-white/10"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
@@ -23,28 +23,18 @@ export default function About() {
         <SectionHeading>About me</SectionHeading>
         <p className="mb-3">
           I am a driven, ambitious person who always strives to create value
-          through quality. I have a previous professional background as a
-          <span className="font-medium"> User Researcher at Spotify</span>
-          <span className="font-medium">
-            and as the co-founder of a MedTech start-up
-          </span>
-          . I hold a
-          <span className="font-medium">
-            master&apos;s degree in Computer Science
-          </span>
-          specializing in Immersive Technologies at Stockholm University with
-          the
-          <span className="font-medium"> highest achievable GPA.</span>
+          through quality. I have a previous professional background as a User
+          Researcher at Spotify and as the co-founder of a MedTech start-up . I
+          hold a master&apos;s degree in Computer Science specializing in
+          Immersive Technologies at Stockholm University with the highest
+          achievable GPA.
         </p>
         <p className="mb-3">
           My previous experience has given me a solid knowledge of processes and
-          methods for solving problems and{" "}
-          <span className="font-medium">
-            creating business and user value in complex industries.
-          </span>{" "}
-          I strive to use my proven ability to use systematic processes,
-          communicate, and collaborate to create value by producing maintainable
-          and efficient code.
+          methods for solving problems and creating business and user value in
+          complex industries. I strive to use my proven ability to use
+          systematic processes, communicate, and collaborate to create value by
+          producing maintainable and efficient code.
         </p>
         <p className="mb-3">
           I am especially interested in everything web-based and the
