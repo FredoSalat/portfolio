@@ -8,7 +8,7 @@ import { useSectionInView } from "@/lib/hooks";
 import portrait from "@/public/portrait.png";
 
 export default function About() {
-  const { ref } = useSectionInView("About");
+  const { ref } = useSectionInView("About", 0.5);
 
   return (
     <motion.section

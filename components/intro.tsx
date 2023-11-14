@@ -18,25 +18,24 @@ export default function Intro() {
     <section
       ref={ref}
       id="home"
-      className="flex flex-col sm:h-screen sm:min-h-[840px] max-w-[70rem] scroll-mt-[100rem] items-center justify-center sm:md-0 mb-10 gap-2"
+      className="flex flex-col sm:h-screen sm:min-h-[840px] sm:max-w-[70rem] scroll-mt-[100rem] items-center justify-center sm:mb-0 mb-10 gap-2"
     >
-      <motion.p
-        className="mb-10 mt-4 px-4 text-4xl font-medium !leading-[1.5] sm:text-6xl sm:!leading-[1.4]"
+      <motion.div
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        Hi, I&apos;m Fredrik! I work as a web developer at Canvas Consulting. I
-        have a solid and broad background as, among other things, a{" "}
-        <a
-          className="underline font-bold"
-          href="https://www.aimedtech.com/"
-          target="_blank"
-        >
-          founder
-        </a>
-        &nbsp;in the role of COO and user researcher at{" "}
-        <span className="font-bold">Spotify</span>.
-      </motion.p>
+        <p className="mb-10 px-4 text-3xl font-bold !leading-[1.5] sm:text-6xl sm:!leading-[1.4] mt-20">
+          Hi, I&apos;m Fredrik! <br /> A junior web developer. I have a solid
+          understanding of the processes that goes into making great user
+          experiences
+        </p>
+
+        <p className="mb-10 px-4 text-3xl font-regular !leading-[1.5] sm:text-3xl sm:!leading-[1.4] mt-20">
+          Earlier in my career, I founded a scale-up company in the AI and
+          Medtech industry and worked as a user researcher for companies such as
+          Spotify.
+        </p>
+      </motion.div>
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
         initial={{ opacity: 0, y: 100 }}
