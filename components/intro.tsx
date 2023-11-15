@@ -24,13 +24,13 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <p className="mb-10 px-4 text-3xl font-bold !leading-[1.5] sm:text-6xl sm:!leading-[1.4] mt-20">
+        <p className="font-bold text-4xl sm:text-6xl px-4 mb-10 !leading-[1.5] sm:!leading-[1.4] sm:mt-20 mt-6">
           Hi, I&apos;m Fredrik! <br /> A junior web developer. I have a solid
           understanding of the processes that goes into making great user
           experiences
         </p>
 
-        <p className="mb-10 px-4 text-3xl font-regular !leading-[1.5] sm:text-3xl sm:!leading-[1.4] mt-20">
+        <p className="font-regular text-2xl sm:text-3xl !leading-[1.5] sm:!leading-[1.4] mb-10 px-4">
           Earlier in my career, I founded a scale-up company in the AI and
           Medtech industry and worked as a user researcher for companies such as
           Spotify.
