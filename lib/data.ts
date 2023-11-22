@@ -94,8 +94,9 @@ export const projectsData = [
   },
   {
     title: "Personal training",
-    description: "Building a landing page for ",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+    description:
+      "Building a landing page for a personal trainer in order to attract prospective clients",
+    tags: ["React", "TypeScript", "Next.js", "Tailwind"],
     imageUrl: solenergi2,
     url: "https://solenergiteamet.se/",
   },
@@ -103,14 +104,7 @@ export const projectsData = [
     title: "What to eat?",
     description:
       "Building a full stack application matching the ingredients in your fridge with recipes tailored to your taste",
-    tags: ["React", "Next.js", "Prisma", "Tailwind"],
-    imageUrl: solenergi3,
-    url: "https://solenergiteamet.se/",
-  },
-  {
-    title: "E-commerce",
-    description: "Built a dashboard and e-commerce platform",
-    tags: ["React", "Next.js", "Prisma", "Tailwind"],
+    tags: ["React", "TypeScript", "Next.js", "Prisma", "Tailwind"],
     imageUrl: solenergi3,
     url: "https://solenergiteamet.se/",
   },
