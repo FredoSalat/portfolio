@@ -19,7 +19,7 @@ export default function About() {
       transition={{ delay: 0.175 }}
       id="about"
     >
-      <div className="lg:w-6/12">
+      <div className="w-full">
         <SectionHeading>About me</SectionHeading>
 
         <p className="mb-3">
@@ -47,24 +47,7 @@ export default function About() {
           streets of Berlin.
         </p>
       </div>
-      <div className="lg:w-6/12 flex items-center justify-center mt-10">
-        <motion.div
-          initial={{ opacity: 0, scale: 0 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ type: "tween", duration: 0.2 }}
-          className="h-[600px] w-[600px]"
-        >
-          <Image
-            src={portrait}
-            alt="Fredrik portrait"
-            width="600"
-            height="600"
-            quality="95"
-            priority={true}
-            className="object-fill border-[0.35rem] border-none shadow-xl"
-          />
-        </motion.div>
-      </div>
+      <div className=" flex items-center justify-center mt-10"></div>
     </motion.section>
   );
 }
