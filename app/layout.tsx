@@ -13,12 +13,16 @@ import ThemeContextProvider from "@/context/theme-context";
 const swedenSans = localFont({
   src: [
     {
-      path: "/../public/fonts/SwedenSansRegular.woff2",
+      path: "/../public/fonts/SwedenSansBook.woff2",
       weight: "400",
     },
     {
+      path: "/../public/fonts/SwedenSansRegular.woff2",
+      weight: "600",
+    },
+    {
       path: "/../public/fonts/SwedenSansBold.woff2",
-      weight: "700",
+      weight: "800",
     },
   ],
   variable: "--font-SwedenSans",
