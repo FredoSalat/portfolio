@@ -8,7 +8,7 @@ import { FaGithubSquare } from "react-icons/fa";
 
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
-import portrait from "@/public/portrait-3.jpg";
+import portrait from "@/public/portrait-2.jpg";
 
 import Image from "next/image";
 
@@ -40,9 +40,10 @@ export default function Intro() {
 
         <div className="px-4">
           <div className="flex items-end gap-6">
-            <p className="font-bold text-4xl md:text-5xl lg:text-6xl !leading-[1.5] sm:!leading-[1.4]">
-              Hi, I&apos;m Fredrik! <br /> A junior web developer.
+            <p className="introMainHeader">
+              Hi, I&apos;m Fredrik! <br /> Junior Web Developer.
             </p>
+
             <Image
               src={portrait}
               alt="Fredrik portrait"
@@ -54,15 +55,15 @@ export default function Intro() {
             />
           </div>
 
-          <p className="font-bold text-4xl md:text-5xl lg:text-6xl !leading-[1.5] sm:!leading-[1.4] mb-10">
-            I have a solid understanding of the processes that go into making
-            great user experiences
+          <p className="introMainHeader mb-10">
+            I&apos;m all about building user-friendly web applications.
           </p>
 
-          <p className="font-regular text-2xl sm:text-3xl !leading-[1.5] sm:!leading-[1.4] mb-10">
-            Earlier in my career, I founded a scale-up company in the AI and
-            MedTech industry and worked as a user researcher for companies such
-            as Spotify.
+          <p className="font-semibold text-[1.2rem] sm:text-3xl !leading-[1.5] sm:!leading-[1.4] mb-10">
+            My educational background in Computer Science and previous roles as
+            Founder and User Researcher have led me to pivot to Web Development.
+            For the past 1.5 years, I have been learning TypeScript, React and
+            Next.js.
           </p>
         </div>
       </motion.div>
@@ -87,7 +88,7 @@ export default function Intro() {
 
         <a
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:hover:text-white"
-          href="/CV.pdf"
+          href="/CV-Fredrik-Marthinsen.pdf"
           download
         >
           Download CV
