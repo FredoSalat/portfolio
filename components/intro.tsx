@@ -8,6 +8,9 @@ import { FaGithubSquare } from "react-icons/fa";
 
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
+import portrait from "@/public/portrait-3.jpg";
+
+import Image from "next/image";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
@@ -18,24 +21,52 @@ export default function Intro() {
     <section
       ref={ref}
       id="home"
-      className="flex flex-col sm:h-screen lg:min-h-[900px] md:min-h-[1100px] sm:min-h-[1200px] sm:max-w-[70rem] scroll-mt-[100rem] items-center justify-center sm:mb-0 mb-10 gap-2"
+      className="flex flex-col md:h-screen lg:min-h-[900px] md:min-h-[1100px] sm:min-h-[1000px] sm:max-w-[70rem] scroll-mt-[100rem] justify-center sm:mb-0 mb-10 gap-2"
     >
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
+        className="flex flex-col"
       >
-        <p className="font-bold text-4xl sm:text-6xl px-4 mb-10 !leading-[1.5] sm:!leading-[1.4] sm:mt-20 mt-6">
-          Hi, I&apos;m Fredrik! <br /> A junior web developer. I have a solid
-          understanding of the processes that goes into making great user
-          experiences
-        </p>
+        <Image
+          src={portrait}
+          alt="Fredrik portrait"
+          width="200"
+          height="200"
+          quality="95"
+          priority={true}
+          className="w-[200px] h-[200px] object-fill border-[0.35rem] shadow-xl rounded-full border-white mx-auto mb-10 md:hidden"
+        />
 
-        <p className="font-regular text-2xl sm:text-3xl !leading-[1.5] sm:!leading-[1.4] mb-10 px-4">
-          Earlier in my career, I founded a scale-up company in the AI and
-          MedTech industry and worked as a user researcher for companies such as
-          Spotify.
-        </p>
+        <div className="px-4">
+          <div className="flex items-end gap-6">
+            <p className="font-bold text-4xl md:text-5xl lg:text-6xl !leading-[1.5] sm:!leading-[1.4]">
+              Hi, I&apos;m Fredrik! <br /> A junior web developer.
+            </p>
+            <Image
+              src={portrait}
+              alt="Fredrik portrait"
+              width="200"
+              height="200"
+              quality="95"
+              priority={true}
+              className="w-[170px] h-[170px] lg:w-[210px] lg:h-[210px] object-fill border-[0.35rem] shadow-xl rounded-full border-white hidden md:block"
+            />
+          </div>
+
+          <p className="font-bold text-4xl md:text-5xl lg:text-6xl !leading-[1.5] sm:!leading-[1.4] mb-10">
+            I have a solid understanding of the processes that go into making
+            great user experiences
+          </p>
+
+          <p className="font-regular text-2xl sm:text-3xl !leading-[1.5] sm:!leading-[1.4] mb-10">
+            Earlier in my career, I founded a scale-up company in the AI and
+            MedTech industry and worked as a user researcher for companies such
+            as Spotify.
+          </p>
+        </div>
       </motion.div>
+
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-3 px-4 text-lg font-regular"
         initial={{ opacity: 0, y: 100 }}
