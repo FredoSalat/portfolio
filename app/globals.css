@@ -22,3 +22,7 @@ html.dark {
 .introMainHeader {
   @apply font-bold text-[1.94rem] md:text-5xl lg:text-6xl !leading-[1.5] sm:!leading-[1.4];
 }
+
+.carouselNavigation {
+  @apply hidden group-hover:block absolute top-[42%] translate-x-0 translate-y-[50%] text-2xl rounded-xl p-2 bg-black/20 text-white cursor-pointer hover:bg-black/50 active:bg-black/30;
+}
