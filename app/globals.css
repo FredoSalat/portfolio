@@ -24,5 +24,5 @@ html.dark {
 }
 
 .carouselNavigation {
-  @apply hidden group-hover:block absolute top-[42%] translate-x-0 translate-y-[50%] text-2xl rounded-xl p-2 bg-black/20 text-white cursor-pointer hover:bg-black/50 active:bg-black/30;
+  @apply hidden sm:group-hover:block absolute top-[42%] translate-x-0 translate-y-[50%] text-2xl rounded-xl p-2 bg-black/20 text-white cursor-pointer hover:bg-black/50 active:bg-black/30;
 }
