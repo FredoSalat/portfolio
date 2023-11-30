@@ -5,6 +5,7 @@ import React, { useState } from "react";
 
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
+import { useSwipeable } from "react-swipeable";
 
 export default function Carousel({ images }: { images: Carousel }) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -23,8 +24,16 @@ export default function Carousel({ images }: { images: Carousel }) {
     setCurrentIndex(slideIndex);
   };
 
+  const handlers = useSwipeable({
+    onSwipedLeft: () => nextSlide(),
+    onSwipedRight: () => prevSlide(),
+  });
+
   return (
-    <div className="max-w-[400px] max-h-[350px] m-auto relative group">
+    <div
+      {...handlers}
+      className="max-w-[400px] max-h-[350px] m-auto relative group"
+    >
       <Image
         alt={images[currentIndex].alt}
         src={images[currentIndex].image}
