@@ -1,10 +1,13 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import solenergi1 from "@/public/solenergi-1.png";
-import solenergi2 from "@/public/solenergi-2.png";
-import solenergi3 from "@/public/solenergi-3.png";
+import solenergi1 from "@/public/images/solenergi-1.png";
+import solenergi2 from "@/public/images/solenergi-2.png";
+import solenergi3 from "@/public/images/solenergi-3.png";
+
+import sarek1 from "@/public/images/sarek-1.jpg";
+import sarek2 from "@/public/images/sarek-2.jpg";
+import scotland1 from "@/public/images/scotland-1.jpg";
 
 export const links = [
   {
@@ -127,4 +130,10 @@ export const skillsData = [
   "Python",
   "Framer Motion",
   "Figma",
+] as const;
+
+export const aboutMeImages = [
+  { alt: "Sarek Hike", image: sarek1 },
+  { alt: "Sarek Hike", image: sarek2 },
+  { alt: "Scotland Hike", image: scotland1 },
 ] as const;

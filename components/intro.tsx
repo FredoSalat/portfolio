@@ -8,7 +8,7 @@ import { FaGithubSquare } from "react-icons/fa";
 
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
-import portrait from "@/public/portrait-2.jpg";
+import portrait from "@/public/images/portrait-2.jpg";
 
 import Image from "next/image";
 

@@ -1,11 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
 
 import SectionHeading from "@/components/section-heading";
 import { useSectionInView } from "@/lib/hooks";
-import portrait from "@/public/portrait-3.jpg";
+import { aboutMeImages } from "@/lib/data";
+import Carousel from "@/components/carousel";
 
 export default function About() {
   const { ref } = useSectionInView("About", 0.5);
@@ -13,13 +13,13 @@ export default function About() {
   return (
     <motion.section
       ref={ref}
-      className="flex flex-col  lg:flex-row mb-28 sm:max-w-[60rem] max-w-[30rem]  leading-8 sm:mb-40 scroll-mt-28 p-5 text-left font-regular text-lg"
+      className="flex flex-col lg:flex-row mb-28 sm:max-w-[60rem] max-w-[40rem] leading-8 sm:mb-40 scroll-mt-28 p-1  text-left font-regular text-lg items-center gap-10 lg:gap-0"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
       id="about"
     >
-      <div className="w-1/2">
+      <div className="lg:w-1/2 max-w-[600px]">
         <SectionHeading>About me</SectionHeading>
 
         <p className="mb-2">
@@ -37,17 +37,15 @@ export default function About() {
           cutting-edge technologies around it, as well as in AI and its
           application in vital industries.
         </p>
-        <p className="mb-2">
-          I am especially interested in everything web-based and the
-          cutting-edge technologies around it, as well as in AI and its
-          application in vital industries.
-        </p>
+
         <p>
           In my spare time, you can find me on hiking trails, ski slopes, or
           running the streets of Berlin.
         </p>
       </div>
-      <div className=" flex items-center justify-center mt-10"></div>
+      <div className="lg:w-1/2 lg:p-8">
+        <Carousel images={aboutMeImages} />
+      </div>
     </motion.section>
   );
 }
