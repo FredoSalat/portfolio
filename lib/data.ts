@@ -1,13 +1,12 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { LuGraduationCap } from "react-icons/lu";
-import solenergi1 from "@/public/images/solenergi-1.png";
-import solenergi2 from "@/public/images/solenergi-2.png";
-import solenergi3 from "@/public/images/solenergi-3.png";
+import solenergi from "@/public/images/solenergi.png";
+import whatToEat from "@/public/images/whatToEat.png";
 
 import sarek1 from "@/public/images/sarek-1.jpg";
 import sarek2 from "@/public/images/sarek-2.jpg";
-import scotland1 from "@/public/images/scotland-1.jpg";
+import scotland from "@/public/images/scotland.jpg";
 
 export const links = [
   {
@@ -92,24 +91,24 @@ export const projectsData = [
     description:
       "Building a full stack customer-facing web application for a company in the solar energy industry.",
     tags: ["React", "Next.js", "Tailwind"],
-    imageUrl: solenergi1,
+    imageUrl: solenergi,
     url: "https://solenergiteamet.se/",
   },
-  {
+  /*   {
     title: "Personal training",
     description:
       "Building a landing page for a personal trainer in order to attract prospective clients",
     tags: ["React", "TypeScript", "Next.js", "Tailwind"],
     imageUrl: solenergi2,
     url: "https://solenergiteamet.se/",
-  },
+  }, */
   {
     title: "What to eat?",
     description:
       "Building a full stack application matching the ingredients in your fridge with recipes tailored to your taste",
     tags: ["React", "TypeScript", "Next.js", "Prisma", "Tailwind"],
-    imageUrl: solenergi3,
-    url: "https://solenergiteamet.se/",
+    imageUrl: whatToEat,
+    url: "https://github.com/FredoSalat/what-to-eat",
   },
 ] as const;
 
@@ -135,5 +134,5 @@ export const skillsData = [
 export const aboutMeImages = [
   { alt: "Sarek Hike", image: sarek1 },
   { alt: "Sarek Hike", image: sarek2 },
-  { alt: "Scotland Hike", image: scotland1 },
+  { alt: "Scotland Hike", image: scotland },
 ] as const;

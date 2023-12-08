@@ -20,7 +20,7 @@ html.dark {
 }
 
 .introMainHeader {
-  @apply font-bold text-[1.94rem] md:text-5xl lg:text-6xl !leading-[1.5] sm:!leading-[1.4];
+  @apply font-extrabold text-[1.94rem] md:text-5xl lg:text-6xl !leading-[1.5] sm:!leading-[1.4];
 }
 
 .carouselNavigation {
