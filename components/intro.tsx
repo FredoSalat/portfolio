@@ -1,16 +1,15 @@
 "use client";
 
-import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
+import { motion } from "framer-motion";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 
+import portrait from "@/public/images/portrait.jpg";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
-import portrait from "@/public/images/portrait-2.jpg";
-
-import Image from "next/image";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
@@ -35,7 +34,7 @@ export default function Intro() {
           height="200"
           quality="95"
           priority={true}
-          className="w-[200px] h-[200px] object-fill border-[0.35rem] shadow-xl rounded-full border-white mx-auto mb-10 md:hidden"
+          className="w-[200px] h-[200px] object-contain border-[0.35rem] shadow-xl rounded-full border-white mx-auto mb-10 md:hidden"
         />
 
         <div className="px-4">
@@ -59,7 +58,7 @@ export default function Intro() {
             I&apos;m all about building user-friendly web applications.
           </p>
 
-          <p className="font-semibold text-[1.2rem] sm:text-3xl !leading-[1.5] sm:!leading-[1.4] mb-10">
+          <p className="font-normal text-[1.2rem] sm:text-3xl !leading-[1.5] sm:!leading-[1.4] mb-10">
             My educational background in Computer Science and previous roles as
             Founder and User Researcher have led me to pivot to Web Development.
             For the past 1.5 years, I have been learning TypeScript, React and

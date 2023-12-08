@@ -40,7 +40,6 @@ export default function Skills() {
             viewport={{
               once: true,
             }}
-            whileHover={{ rotateY: 180, scale: 1.1 }}
             transition={{ duration: 0.5 }}
             custom={index}
           >

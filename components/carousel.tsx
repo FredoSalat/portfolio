@@ -1,7 +1,7 @@
 import { Carousel } from "@/lib/types";
 
 import Image from "next/image";
-import React, { useState } from "react";
+import { useState } from "react";
 
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
@@ -32,7 +32,7 @@ export default function Carousel({ images }: { images: Carousel }) {
   return (
     <div
       {...handlers}
-      className="max-w-[400px] max-h-[350px] m-auto relative group"
+      className="w-[350px] h-[250px] sm:w-[400px] sm:h-[350px] sm:mt-10 m-auto relative group"
     >
       <Image
         alt={images[currentIndex].alt}
