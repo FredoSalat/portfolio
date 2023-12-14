@@ -19,7 +19,7 @@ export default function About() {
       transition={{ delay: 0.175 }}
       id="about"
     >
-      <div className="lg:w-1/2 max-w-[600px]">
+      <div className="lg:w-1/2 max-w-[600px] leading-relaxed">
         <SectionHeading>About me</SectionHeading>
 
         <p className="mb-2">
