@@ -40,7 +40,7 @@ export default function Intro() {
         <div className="px-4">
           <div className="flex items-end gap-6">
             <p className="introMainHeader">
-              Hi, I&apos;m Fredrik! <br /> Junior Web Developer.
+              Hi, I&apos;m Fredrik! <br /> Web Developer.
             </p>
 
             <Image
@@ -60,8 +60,8 @@ export default function Intro() {
 
           <p className="font-normal text-[1.2rem] sm:text-3xl !leading-[1.5] sm:!leading-[1.4] mb-10">
             My educational background in Computer Science and previous roles as
-            Founder and User Researcher have led me to pivot to Web Development.
-            For the past 1.5 years, I have been learning TypeScript, React and
+            Founder and User Researcher has led me on a path to Web Development.
+            For the past years, I have been learning TypeScript, React and
             Next.js.
           </p>
         </div>
